@@ -1,0 +1,33 @@
+<PACIENTE>
+    <ID>489</ID>
+    <Nome>Maria Eduarda Bernardino</Nome>
+    <Data_Nascimento>16-06-1998</Data_Nascimento>
+    <Sexo>Feminino</Sexo>
+    <Telefone>11 971835036</Telefone>
+    <Telefone_Alternativo>11 999876543</Telefone_Alternativo>
+    <Email>eduardabernardinom@gmail.com</Email>
+    <Endereco>
+        <Rua>Rua das Flores</Rua>
+        <Numero>123</Numero>
+        <Bairro>Centro</Bairro>
+        <Cidade>São Paulo</Cidade>
+        <Estado>SP</Estado>
+        <CEP>01000-000</CEP>
+    </Endereco>
+    <Convenio>
+        <ID>684</ID>
+        <Nome_Convenio>UNIMED</Nome_Convenio>
+        <Tipo_Plano>Ambulatorial</Tipo_Plano>
+        <Numero_Carteirinha>987654321</Numero_Carteirinha>
+        <Data_Inicio_Convenio>19-12-2022</Data_Inicio_Convenio>
+        <Validade_Convenio>Indeterminado</Validade_Convenio>
+    </Convenio>
+    <Contato_Emergencia>
+        <Nome>Carlos Bernardino</Nome>
+        <Telefone>11 9988776655</Telefone>
+    </Contato_Emergencia>
+    <Documentos>
+        <CPF>123.456.789-00</CPF>
+        <RG>12.345.678-9</RG>
+    </Documentos>
+</PACIENTE>

@@ -1,0 +1,51 @@
+{
+    "Consulta": {
+        "ID": 908,
+        "Paciente_ID": 489,
+        "ID_Medico": 427,
+        "Data_Consulta": "19-11-2024 10:30",
+        "Especialidade": "Oftalmologista",
+        "Tipo_Consulta": "Presencial",
+        "Status": "Concluido",
+        "Avaliacao_Medico": {
+            "Nota": 4.5,
+            "Comentarios": "Médico atencioso e detalhista."
+        },
+        "Exames": [
+            {
+                "Nome": "Exame de Acuidade Visual",
+                "Data_Solicitacao": "19-11-2024",
+                "Status": "Concluido"
+            },
+            {
+                "Nome": "Topografia Corneal",
+                "Data_Solicitacao": "19-11-2024",
+                "Status": "Pendente"
+            }
+        ],
+        "Receitas": [
+            {
+                "Nome_Medicamento": "Colírio Lubrificante",
+                "Dosagem": "2 gotas ao dia",
+                "Duracao": "15 dias"
+            }
+        ],
+        "Observacoes": "Exames para avaliação de acuidade visual",
+        "Observacoes_Medico": "Aguardar resultados dos exames de Topografia Corneal",
+        "Medico": {
+            "ID": 427,
+            "Nome": "Dr. João Silva",
+            "Especialidade": "Oftalmologista",
+            "CRM": "123456-SP",
+            "Telefone": "11 9988776655",
+            "Email": "dr.joao.silva@clinica.com",
+            "Endereco": {
+                "Rua": "Rua Dorothy, 123",
+                "Bairro": "Centro",
+                "Cidade": "São Paulo",
+                "Estado": "SP",
+                "CEP": "01000-000"
+            }
+        }
+    }
+}

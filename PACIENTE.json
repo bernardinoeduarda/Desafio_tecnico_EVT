@@ -1,0 +1,35 @@
+{
+    "PACIENTE": {
+        "ID": 489,
+        "Nome": "Maria Eduarda Bernardino",
+        "Data_Nascimento": "16-06-1998",
+        "Sexo": "Feminino",
+        "Telefone": "11 971835036",
+        "Telefone_Alternativo": "11 999876543", 
+        "Email": "eduardabernardinom@gmail.com",
+        "Endereco": {
+            "Rua": "Rua das Flores",
+            "Numero": "123",
+            "Bairro": "Centro",
+            "Cidade": "São Paulo",
+            "Estado": "SP",
+            "CEP": "01000-000"
+        },
+        "Convenio": {
+            "ID": 684,
+            "Nome_Convenio": "UNIMED",
+            "Tipo_Plano": "Ambulatorial",
+            "Numero_Carteirinha": "987654321",
+            "Data_Inicio_Convenio": "19-12-2022",
+            "Validade_Convenio": "Indeterminado"
+        },
+        "Contato_Emergencia": {
+            "Nome": "Carlos Bernardino",
+            "Telefone": "11 9988776655"
+        },
+        "Documentos": {
+            "CPF": "123.456.789-00",
+            "RG": "12.345.678-9"
+        }
+    }
+}

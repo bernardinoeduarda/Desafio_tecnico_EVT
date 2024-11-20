@@ -1,0 +1,49 @@
+<CONSULTA>
+    <ID>908</ID>
+    <Paciente_ID>489</Paciente_ID>
+    <ID_Medico>427</ID_Medico>
+    <Data_Consulta>19-11-2024 10:30</Data_Consulta>
+    <Especialidade>Oftalmologista</Especialidade>
+    <Tipo_Consulta>Presencial</Tipo_Consulta>
+    <Status>Concluido</Status>
+    <Avaliacao_Medico>
+        <Nota>4.5</Nota>
+        <Comentarios>Médico atencioso e detalhista.</Comentarios>
+    </Avaliacao_Medico>
+    <Exames>
+        <Exame>
+            <Nome>Exame de Acuidade Visual</Nome>
+            <Data_Solicitacao>19-11-2024</Data_Solicitacao>
+            <Status>Concluido</Status>
+        </Exame>
+        <Exame>
+            <Nome>Topografia Corneal</Nome>
+            <Data_Solicitacao>19-11-2024</Data_Solicitacao>
+            <Status>Pendente</Status>
+        </Exame>
+    </Exames>
+    <Receitas>
+        <Receita>
+            <Nome_Medicamento>Colírio Lubrificante</Nome_Medicamento>
+            <Dosagem>2 gotas ao dia</Dosagem>
+            <Duracao>15 dias</Duracao>
+        </Receita>
+    </Receitas>
+    <Observacoes>Exames para avaliação de acuidade visual</Observacoes>
+    <Observacoes_Medico>Aguardar resultados dos exames de Topografia Corneal</Observacoes_Medico>
+    <Medico>
+        <ID>427</ID>
+        <Nome>Dr. João Silva</Nome>
+        <Especialidade>Oftalmologista</Especialidade>
+        <CRM>123456-SP</CRM>
+        <Telefone>11 9988776655</Telefone>
+        <Email>dr.joao.silva@clinica.com</Email>
+        <Endereco>
+            <Rua>Rua Dorothy, 123</Rua>
+            <Bairro>Centro</Bairro>
+            <Cidade>São Paulo</Cidade>
+            <Estado>SP</Estado>
+            <CEP>01000-000</CEP>
+        </Endereco>
+    </Medico>
+</CONSULTA>

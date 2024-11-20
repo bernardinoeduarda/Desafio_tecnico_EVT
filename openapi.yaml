@@ -1,0 +1,224 @@
+openapi: 3.0.0
+info:
+  title: API de Pacientes e Consultas
+  description: API para gerenciamento de pacientes e consultas médicas.
+  version: 1.0.0
+
+paths:
+  /pacientes/{id}:
+    get:
+      summary: Recupera informações de um paciente pelo ID.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            example: 489
+      responses:
+        '200':
+          description: Dados do paciente recuperados com sucesso.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Paciente'
+        '404':
+          description: Paciente não encontrado.
+
+  /pacientes:
+    post:
+      summary: Registra um novo paciente.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Paciente'
+      responses:
+        '201':
+          description: Paciente registrado com sucesso.
+        '400':
+          description: Erro na requisição (dados inválidos).
+
+  /consultas/{id}:
+    get:
+      summary: Recupera informações de uma consulta pelo ID.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            example: 908
+      responses:
+        '200':
+          description: Dados da consulta recuperados com sucesso.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Consulta'
+        '404':
+          description: Consulta não encontrada.
+
+  /consultas:
+    post:
+      summary: Registra uma nova consulta.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Consulta'
+      responses:
+        '201':
+          description: Consulta registrada com sucesso.
+        '400':
+          description: Erro na requisição (dados inválidos).
+
+components:
+  schemas:
+    Paciente:
+      type: object
+      properties:
+        ID:
+          type: integer
+        Nome:
+          type: string
+        Data_Nascimento:
+          type: string
+          format: date
+        Sexo:
+          type: string
+        Telefone:
+          type: string
+        Telefone_Alternativo:
+          type: string
+        Email:
+          type: string
+        Endereco:
+          type: object
+          properties:
+            Rua:
+              type: string
+            Numero:
+              type: string
+            Bairro:
+              type: string
+            Cidade:
+              type: string
+            Estado:
+              type: string
+            CEP:
+              type: string
+        Convenio:
+          type: object
+          properties:
+            ID:
+              type: integer
+            Nome_Convenio:
+              type: string
+            Tipo_Plano:
+              type: string
+            Numero_Carteirinha:
+              type: string
+            Data_Inicio_Convenio:
+              type: string
+              format: date
+            Validade_Convenio:
+              type: string
+        Contato_Emergencia:
+          type: object
+          properties:
+            Nome:
+              type: string
+            Telefone:
+              type: string
+        Documentos:
+          type: object
+          properties:
+            CPF:
+              type: string
+            RG:
+              type: string
+
+    Consulta:
+      type: object
+      properties:
+        ID:
+          type: integer
+        Paciente_ID:
+          type: integer
+        ID_Medico:
+          type: integer
+        Data_Consulta:
+          type: string
+          format: date-time
+        Especialidade:
+          type: string
+        Tipo_Consulta:
+          type: string
+        Status:
+          type: string
+        Avaliacao_Medico:
+          type: object
+          properties:
+            Nota:
+              type: number
+              format: float
+            Comentarios:
+              type: string
+        Exames:
+          type: array
+          items:
+            type: object
+            properties:
+              Nome:
+                type: string
+              Data_Solicitacao:
+                type: string
+                format: date
+              Status:
+                type: string
+        Receitas:
+          type: array
+          items:
+            type: object
+            properties:
+              Nome_Medicamento:
+                type: string
+              Dosagem:
+                type: string
+              Duracao:
+                type: string
+        Observacoes:
+          type: string
+        Observacoes_Medico:
+          type: string
+        Medico:
+          type: object
+          properties:
+            ID:
+              type: integer
+            Nome:
+              type: string
+            Especialidade:
+              type: string
+            CRM:
+              type: string
+            Telefone:
+              type: string
+            Email:
+              type: string
+            Endereco:
+              type: object
+              properties:
+                Rua:
+                  type: string
+                Bairro:
+                  type: string
+                Cidade:
+                  type: string
+                Estado:
+                  type: string
+                CEP:
+                  type: string
