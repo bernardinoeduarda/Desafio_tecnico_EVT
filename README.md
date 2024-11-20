@@ -7,7 +7,7 @@ Modificações realizadas no projeto de gerenciamento de consultas médicas.
 A estrutura da consulta foi aprimorada para incluir mais detalhes sobre a consulta, exames, receitas e etc. As modificações incluem:
 
 ### **Detalhes da Consulta**
-- **Tipo_Consulta**: Adicionado um campo para diferenciar se a consulta é **Presencial** ou realizada via **Telemedicina**.
+- **Tipo_Consulta**: Foi acrescentado um campo para diferenciar se a consulta é **Presencial** ou realizada via **Telemedicina**.
 
 ### **Avaliação do Médico**
 - **Avaliacao_Medico**: Foi adicionado um campo para registrar a **Nota** (nota de 1 a 5) e **Comentários** sobre a consulta, permitindo uma avaliação detalhada do atendimento.
